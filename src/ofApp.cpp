@@ -21,12 +21,17 @@ void ofApp::setup(){
     }
 
     
- 
+    alphaMaskImage.load("img_mask_720c.png");
+    alphaMaskTexture = alphaMaskImage.getTexture();
     
     vidGrabber.setDeviceID(XML.getValue("cameraDeviceID", 0));
     vidGrabber.setDesiredFrameRate(60);
     vidGrabber.initGrabber(camWidth, camHeight);
-
+    
+    //set alpha mask for grabber, and for texture onto which we grab
+    
+    //videoTexture.setAlphaMask(alphaMaskTexture);
+    
     ofSetVerticalSync(true);
     
     //setup syphon
@@ -42,17 +47,19 @@ void ofApp::setup(){
 void ofApp::update(){
     ofBackground(100, 100, 100);
     vidGrabber.update();
+    vidGrabber.getTexture().setAlphaMask(alphaMaskTexture);
+
 
     if(vidGrabber.isFrameNew()){
-        //ofPixels & pixels = vidGrabber.getPixels();
         videoTexture = vidGrabber.getTexture();
+
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofSetHexColor(0xffffff);
-    //vidGrabber.draw(20, 20);
+    vidGrabber.draw(0, 0, 160, 160*camHeight/camWidth);
     individualTextureSyphonServer.publishTexture(&videoTexture);
 
 }

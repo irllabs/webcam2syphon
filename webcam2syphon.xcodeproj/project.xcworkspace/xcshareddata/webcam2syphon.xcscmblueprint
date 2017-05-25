@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6D8362C0B5AA89425216CA705F5BBDAF841339CA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6D8362C0B5AA89425216CA705F5BBDAF841339CA" : 9223372036854775807,
+    "F4CCB893AFADB97238A965FD2F28717F1CAAE613" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E82B7DFD-1FC3-464F-B725-315058AFCE07",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6D8362C0B5AA89425216CA705F5BBDAF841339CA" : "webcam2syphon\/",
+    "F4CCB893AFADB97238A965FD2F28717F1CAAE613" : "..\/..\/addons\/ofxSyphon"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "webcam2syphon",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "webcam2syphon.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cmuartfab\/webcam2syphon.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D8362C0B5AA89425216CA705F5BBDAF841339CA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/astellato\/ofxSyphon.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F4CCB893AFADB97238A965FD2F28717F1CAAE613"
+    }
+  ]
+}
